@@ -1,0 +1,28 @@
+{
+  "name": "clicko/reporterrors",
+  "description": "Paquete para reportar errores en Laravel",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Oscar Buitrago",
+      "email": "oscar.buitrago@clicko.es"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^10.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clicko\\ReportErrors\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Clicko\\ReportErrors\\ReportErrorsServiceProvider"
+      ]
+    }
+  }
+}
