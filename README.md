@@ -9,15 +9,19 @@
    ```sh
    composer require clicko/reporterrors
 
-2. **Publicar la configuración del paquete:**
+2. **Sino funciona:**
+   ```sh
+   composer require "clicko/reporterrors @dev"
+
+3. **Publicar la configuración del paquete:**
    ```sh
    php artisan vendor:publish --tag=config
 
-3. **Configurar el correo de destino en el archivo .env**
+4. **Configurar el correo de destino en el archivo .env**
    ```sh
-   MAIL_TO_DEVELOPMENT=soporte@clicko.com
+   MAIL_TO_DEVELOPMENT=ejemplo@ejemplo.com
 
-3. **Limpiar y actualizar la configuración:**
+5. **Limpiar y actualizar la configuración:**
    ```sh
    php artisan config:clear
    php artisan cache:clear
